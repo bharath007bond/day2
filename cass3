@@ -1,0 +1,29 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <string.h>
+int main() {
+   int vcount;
+   char vtype[10];
+   printf("enter the number of vehicles :");
+   scanf("%d",&vcount);
+   
+   float collection=0;
+   for(int i=1;i<=vcount;i++){
+   printf("Enter the vehicle type :");
+   scanf("%s",vtype);
+   if(strcmp(vtype,"car")==0)
+   {
+       collection +=50;
+   }
+   else if(strcmp(vtype,"truck")==0)
+   {
+       collection +=100;
+   }
+   if(strcmp(vtype,"bike")==0)
+   {
+       collection +=20;
+   }
+ }
+ printf("total toll collection : %.2f \n",collection);
+  return 0;
+}
