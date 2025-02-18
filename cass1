@@ -1,0 +1,34 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+void readDetails(float* salary,int* score,int* experience)
+{
+    
+    printf("enter the salary : ");
+    scanf("%f",salary);
+    printf("enter the credit score :");
+    scanf("%d",score);
+    printf("enter the experience (years) :");
+    scanf("%d",experience);
+}
+
+int isEligible(float salary,int score,int experience)
+{
+    return((salary>=30000)&&(score>=750)&&(experience>=2));
+}
+int main() {
+   
+    float salary;
+    int score;
+    int experience;
+     readDetails(&salary,&score,&experience);
+    
+    if(isEligible(salary,score,experience))
+    {
+        printf("Loan approved :");
+    }
+    else
+    {
+        printf("loan not approved");
+    }
+    return 0;
+}
