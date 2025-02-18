@@ -1,0 +1,32 @@
+#include<stdio.h>
+void inputmarks(int* marks,int n){
+    printf("enter the marks of students : \n");
+    
+    for(int i=0 ; i<n;i++){
+        scanf("%d",&marks[i]);
+    }
+}
+
+float calcavg(int *marks,int n){
+    float average;
+    int sum=0;
+    for(int i=0;i<n;i++)
+    {
+        sum +=marks[i];
+    }
+    average=(float)sum/(float)n;
+    return average;
+}
+int main()
+{
+    int n;
+    int marks[1000];
+    
+    printf("enter the number of students : \n");
+    scanf("%d",&n);
+    inputmarks(marks,n);
+    float average=calcavg(marks,n);
+    printf("average marks : %.2f \n",average);
+    return 0;
+    //ptr=(int*)malloc(n * sizeof(ptr));
+}
