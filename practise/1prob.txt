@@ -1,0 +1,13 @@
+enter the name : 
+dgh
+enter ward type(G/S/P) :
+ G
+Enter number of days : 
+8
+Patient Name dgh: 
+Total Bill Before Discount 8000
+Discount Applied 400
+Final Bill Amount: 7600.000000
+
+
+=== Code Execution Successful ===
