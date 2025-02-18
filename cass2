@@ -1,0 +1,38 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+void proDetail(int* product)
+{
+    
+    
+    printf("enter the number of product \n");
+    scanf("%d",product);
+   
+   
+    
+    
+}
+ int check(int weight)
+    {
+        return((weight>=950)&&(weight<=1050));
+    }
+int main() {
+    int product,weight;
+    int accept=0;int decline=0;
+    proDetail(&product);
+     for(int i=1;i <=product;i++){
+        printf("enter the weights (in grams) : ");
+        scanf("%d",&weight);
+        if (check(weight))
+    {
+        accept++;
+    }
+    else
+    {
+        decline++;
+    }
+    }
+    printf("accepted product : %d \n",accept);
+    printf("declined product : %d \n",decline);
+
+    return 0;
+}
